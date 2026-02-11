@@ -9,3 +9,4 @@ def main():
 
 
 main()
+# just a note: a def function can be ordered in any way, because python reads the def statement as define on first cycle of code, defining it so order doesnt matter

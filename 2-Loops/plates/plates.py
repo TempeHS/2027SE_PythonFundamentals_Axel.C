@@ -24,5 +24,7 @@ def is_valid(s):
         elif numbers_check == True:
             return False
 
+    return True
+
 
 main()

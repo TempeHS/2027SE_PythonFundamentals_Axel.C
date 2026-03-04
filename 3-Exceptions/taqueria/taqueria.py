@@ -12,9 +12,11 @@ menu = {
 user_total = float(0)
 while True:
     try:
-        user_input = input("Add an item for purchase: ")
+        user_input = input("Add an item for purchase: ").lower()
     except EOFError:
-        
+        print("\n")
+        break
     for item in menu:
-        if user_input == item:
-            user_total += round(menu[item], 2)
+        if user_input == item.lower():
+            user_total += round(menu[item], 3)
+            print("Total: $" + str(user_total))

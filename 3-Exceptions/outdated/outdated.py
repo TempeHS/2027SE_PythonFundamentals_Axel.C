@@ -20,4 +20,5 @@ while True:
             user_date.split(" ")[0], str(months.index(user_date.split(" ")[0]) + 1)
         )
     except IndexError:
-        pass
+        if user_date.split(" ")[0].isnumeric():
+            pass
